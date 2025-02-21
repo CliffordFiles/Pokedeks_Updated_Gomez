@@ -3,7 +3,7 @@ const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const pokemonRouter = require("../routes/pokemon.js")
+const pokemonRouter = require("../routes/pokemon.js");
 
 const app = express();
 
@@ -14,9 +14,5 @@ app.use("/", pokemonRouter);
 const PORT = 8000 || process.env.PORT;
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port localhost:${PORT}!`)
+  console.log(`Server is running on port localhost:${PORT}!`);
 });
-
-
-
-
